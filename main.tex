@@ -5,11 +5,18 @@
 \input{header}
 
 \begin{document}
+
+% Disable pagination, we'll re-enable it after the table of contents
+\pagenumbering{gobble}
+
 \input{kapitel/titel}
 \input{kapitel/selbstständigkeitserklärung}
 
 % Inhaltsverzeichnis
 \include{tocdex}
+
+\frontmatter % Begin document "header", paginated with roman numerals.
+\pagenumbering{Roman} % Capitalized roman numerals plssss
 
 % Abbildungsverzeichnis
 \include{imagedex}
@@ -19,6 +26,8 @@
 
 % Abkürzungsverzeichnis
 \include{acrodex}
+
+\mainmatter % Begin main part of document, paginated with arabic numerals
 
 % Include all the pages
 \input{kapitel/foobar}
