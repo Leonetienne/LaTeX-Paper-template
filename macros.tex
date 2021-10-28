@@ -1,0 +1,12 @@
+%
+% Custom macros
+%
+
+% Will encapsule a text in italic << >>
+\newcommand{\enpointy}[1]{\emph{\textlangle\textlangle{#1}\textrangle\textrangle}}
+
+% Will add a vertical line to tables
+\newcommand{\tblVline}{\vline\hspace{2mm}}
+
+% Will do a full reference, with both a number AND a caption. Like '1.2.3 Coding the code'
+\newcommand{\fullref}[1]{\ref{#1} \nameref{#1}}

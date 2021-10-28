@@ -1,0 +1,22 @@
+%
+% Custom environments
+%
+
+% Code frame
+\DefineVerbatimEnvironment{code}{Verbatim}
+{
+    tabsize=4,
+    samepage=true,
+    frame=lines,
+    numbers=left,
+}
+
+% Nonpagebreaking chapter
+\newenvironment{npbrChap}
+{
+    \begingroup
+    \let\clearpage\relax
+}
+{
+    \endgroup
+}

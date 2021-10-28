@@ -1,0 +1,82 @@
+%
+% Project header
+%
+
+\documentclass[
+12pt, 		% 12pt font size
+pdftex, 	% we are just using pdf
+a4paper,	% a4 paper format
+titlepage,% title has its own page
+oneside,	% single-page view
+%twocolumn,% use two text columns
+headsepline, % hr after headline
+footsepline, % hr before footer,
+bibliography=totoc, % Include literaturverzeichnis in inhaltsverzeichnis
+listoftables=totoc,
+ngerman,	% it's a german document
+%draft			% create debug build. remove for release build
+]{scrreprt}
+
+\parindent=0pt % disable paragraph indent
+
+\usepackage{ngerman}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Paket um Grafiken im Dokument einbetten zu k�nnen.
+% Im PDF sind GIF, PNG, und PDF Grafiken m�glich.
+\usepackage{graphicx}
+
+% caption setzt per default hypcap=true, sodass Sprungmarken im PDF-File nicht nur 
+% zu den Captions von Bildern springen, sondern an den oberen Rand der Bilder.
+\usepackage{caption}
+
+% Font 'Latin Modern Family' verwenden.
+% Verwende dieses Paket wenn du DML selbst kompilierst.
+\usepackage{lmodern}
+
+% Tabellen
+\usepackage{array}
+
+% Mathematische Formeln
+\usepackage{amsmath, amsthm, amssymb, mathtools}
+
+% Deutsche Anf�hrungszeichen
+\usepackage[babel, german=quotes]{csquotes}
+
+% Mehrere Bilder als eine Abbildung
+\usepackage{subcaption}
+
+% Seiten-bottom-padding
+\usepackage[bottom=2.5cm]{geometry}
+
+% Dashed lines
+\usepackage{arydshln}
+
+% Colored text
+\usepackage{color}
+
+% Custom title format
+\usepackage{sectsty}
+\allsectionsfont{\rmfamily}
+\chaptertitlefont{\rmfamily\hspace*{0.5em}}
+
+% Tab-respecting code printing
+\usepackage{fancyvrb}
+
+% Abkürzungsverzeichnis
+\usepackage{acronym}
+
+% Metadaten
+\usepackage[pdftex,
+    pdfauthor={Leon Etienne},
+    pdftitle={Testen der Weinliste Liebig},
+    pdfsubject={Testen der Weinliste Liebig},
+    pdfproducer={Latex},
+    pdfcreator={pdflatex}]{hyperref}
+
+% Load custom macros
+\input{macros}
+
+% Load custom environments
+\input{environments}
