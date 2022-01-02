@@ -17,6 +17,9 @@ ngerman,	% it's a german document
 %draft			% create debug build. remove for release build
 ]{scrbook}
 
+% Load project configuration
+\input{config}
+
 \parindent=0pt % disable paragraph indent
 
 \usepackage{ngerman}
@@ -35,14 +38,13 @@ ngerman,	% it's a german document
 % Verwende dieses Paket wenn du DML selbst kompilierst.
 \usepackage{lmodern}
 
-% Tables
+% Tabellen
 \usepackage{array}
-\usepackage{tabularx}
 
 % Mathematische Formeln
 \usepackage{amsmath, amsthm, amssymb, mathtools}
 
-% Deutsche Anf�hrungszeichen
+% Deutsche Anführungszeichen
 \usepackage[babel, german=quotes]{csquotes}
 
 % Mehrere Bilder als eine Abbildung
@@ -62,6 +64,12 @@ ngerman,	% it's a german document
 \allsectionsfont{\rmfamily}
 \chaptertitlefont{\rmfamily\hspace*{0.5em}}
 
+% Custom side marings
+\usepackage{geometry}
+
+% Zeilenabstand 1.5
+\usepackage[onehalfspacing]{setspace}
+
 % Tab-respecting code printing
 \usepackage{fancyvrb}
 
@@ -70,9 +78,9 @@ ngerman,	% it's a german document
 
 % Metadaten
 \usepackage[pdftex,
-    pdfauthor={Friedrich Gross, Leon Etienne},
-    pdftitle={Exposé Smartes Dorf - Glasfaserverlegung},
-    pdfsubject={Exposé Smartes Dorf - Glasfaserverlegung},
+    pdfauthor={\cfgAuthorName},
+    pdftitle={\cfgDocTitle},
+    pdfsubject={\cfgDocSubTitle},
     pdfproducer={Latex},
     pdfcreator={pdflatex}]{hyperref}
 

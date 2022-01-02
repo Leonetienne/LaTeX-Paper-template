@@ -20,3 +20,19 @@
 {
     \endgroup
 }
+
+% Nicely placed image environment
+% Features:
+%   Margin-top
+%   placed exactly where it's put in the source code
+%   image and caption always stays on same page
+\newenvironment{nicepic}
+{
+    \begin{minipage}{\textwidth}
+    \vspace{7.5mm}
+    \begin{center}
+}
+{
+    \end{center}
+    \end{minipage}
+}

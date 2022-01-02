@@ -9,23 +9,36 @@
 % Disable pagination, we'll re-enable it after the table of contents
 \pagenumbering{gobble}
 
-\input{kapitel/titel}
-\input{kapitel/selbstständigkeitserklärung}
+\input{kapitel/title}
+
+% Only apply this geometry after the title page.
+% We don't want to have a right/bottom indent on the title page aswell.
+\newgeometry{
+    a4paper,
+    right=50mm,
+    bottom=50mm
+}
+
+% Selbstständigkeitserklärung
+\include{selbstständigkeitserklärung}
 
 % Inhaltsverzeichnis
-\include{tocdex}
+\include{dexes/tocdex}
 
 \frontmatter % Begin document "header", paginated with roman numerals.
 \pagenumbering{Roman} % Capitalized roman numerals plssss
 
 % Abbildungsverzeichnis
-\include{imagedex}
+\include{dexes/imagedex}
 
 % Tabellenverzeichnis
-\include{tabledex}
+\include{dexes/tabledex}
 
 % Abkürzungsverzeichnis
-\include{acrodex}
+\include{dexes/acrodex}
+
+% Glossar
+\include{dexes/glossarydex}
 
 \mainmatter % Begin main part of document, paginated with arabic numerals
 
