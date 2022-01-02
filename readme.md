@@ -8,3 +8,4 @@
 # Other stuff worth noting
 * All paths must be relative to project root! (where `compile.sh` lies).
 * Configure your projects base informations such as title, author, year, etc in `config.tex`.
+* When creating new chapters (files in `chapters/`), you have to include them in `chapters.tex`.
