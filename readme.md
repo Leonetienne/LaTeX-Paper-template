@@ -2,7 +2,7 @@
 1) `./compile.sh`, duh. Depends on pdflatex, bibtex, and miktex
 
 ## Nomenclature  
-* All your text should go into `kapitel/`.
+* All your text should go into `chapters/`.
 * All your indices, such as acronyms, references, glossary entrys, if not generated automatically, should go into `dexes/`
 
 # Other stuff worth noting
