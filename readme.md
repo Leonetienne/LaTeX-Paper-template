@@ -1,8 +1,11 @@
+# LaTeX-Paper-template
+> Note: When a path in this readme begins with `/`, it is relative to the project root.  
+
+This is a small framework/template/starting point for scientific LaTeX papers in german.
+
 ## To build the document:
 1) `make`
 
----
-> Note: When a path in this readme begins with `/`, it is relative to the project root.
 
 ## Nomenclature  
 * All your text should go into `/chapters/`.
