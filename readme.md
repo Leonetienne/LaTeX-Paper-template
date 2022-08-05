@@ -17,9 +17,9 @@ See example files in these directories...
 Literature goes in `/dexes/literature.bib`. See examples in this file.
 
 ## LaTeX syntax
-You'll find a basic LaTeX cheat sheet in`/chapters/foobar.tex`.  
+You'll find a basic LaTeX cheat sheet in`/chapters/cheatsheet.tex`.  
 
-A way more extensive (but also deviating from this workflow) paper is `/abschlussarbeit_mit_latex.pdf`, which is targetted towards writing german scientific papers with LaTeX, with some weird IDE on windblows OS. So take that with a grain of salt.
+A way more extensive (but also deviating from this workflow) paper is `/goodies/abschlussarbeit_mit_latex.pdf`, which is targetted towards writing german scientific papers with LaTeX, with some weird IDE on windblows OS. So take that with a grain of salt.
 
 # Other stuff worth noting
 * All paths (like when referencing an image, or including a `.tex`) must always be relative to project root! (where the Makefile lies).
