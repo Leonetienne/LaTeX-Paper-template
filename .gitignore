@@ -5,3 +5,4 @@
 *.lot
 *.toc
 *.tps
+/.auctex-auto/
